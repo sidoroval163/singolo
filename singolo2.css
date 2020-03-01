@@ -1,0 +1,176 @@
+@import url(C:/Users/Алексей/Desktop/singolo/fonts.css);
+
+* {
+    margin:0;
+    padding:0;
+    outline:none;
+   
+    }
+
+.wrapper{width: 1020px;
+    margin:0 auto;}
+
+
+
+.container {
+            width: 940px;
+            margin:0 auto;
+            }
+
+.header{
+   
+    width: 1020px;
+    
+    background-color: #2d303a;
+border-bottom:#323746 6px solid;}
+
+.header_content { 
+align-items: left;
+display:flex;
+justify-content: left;
+height: 864px;
+
+}
+  
+
+
+
+
+
+
+
+.portfolio h1 {font-size: 30px;
+    letter-spacing:-0.004em ;
+        margin-top: 71px;
+        margin-bottom: 0px;
+        line-height: 14px;
+        color: #666d89;
+        font-family: 'LatoBlack';
+        font-weight: 900;
+        text-align: left;}
+
+.portfolio p  {
+    font-size: 18px;
+    margin-top: 33px;
+    margin-bottom: 0px;
+    letter-spacing:+0.0005em ;
+    color: #767e9e;
+    font-family: 'LatoLight';
+    font-weight: 300;
+    text-align: left;
+
+    }
+    .buttons{margin-top: 15px;
+    margin-left:1px;
+    user-select:none;}
+    .button_tag:first-child{border: 1px solid #c5c5c5;
+                            color:#c5c5c5;}
+    .button_tag{
+        
+        font-size: 12px;
+        line-height: 22px;
+        border: 1px solid #666d89;
+        color:#666d89;
+        border-radius: 5px;
+        padding: 2px 7px;
+        padding-bottom: 3px;
+       
+        font-family: 'LatoLight';
+        font-weight: 900;
+        margin-right: 6px;
+        cursor: pointer;
+        letter-spacing: -0.005rem;
+        transition: all .1s linear;
+    }
+    .button_tag:hover {transition: 1s;
+        border: 1px solid #a9ee08;
+        color: #d42e8a;
+    }
+.about_wrapper{width: 1020px;
+    margin:0 auto;
+    height: 728px;
+    background-color: #f2f2f2;
+    border-bottom:#ffffff 6px solid;
+}
+.about_us{
+    align-items: left;
+    display:flex;
+    justify-content: left;
+   width: 940px;
+    margin:0 auto;
+        }
+    .about_us_text h2{font-size: 30px;
+        letter-spacing:-0.004em ;
+            margin-top: 70px;
+            margin-bottom: 0px;
+            line-height: 14px;
+            color: #666d89;
+            font-family: 'LatoBlack';
+            font-weight: 900;
+            text-align: left; ;}
+            
+.about_us_text p{font-size: 18px;
+    line-height: 30px;
+    margin-top: 29px;
+    margin-bottom: 0px;
+    letter-spacing:+0.0005em ;
+    color: #767e9e;
+    font-family: 'LatoLight';
+    font-weight: 300;
+    text-align: justify;
+}       
+/* Grid */
+
+
+    .grid_img_table{
+        max-height: 620px;
+	    overflow: hidden;
+        
+        margin-top: 19px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "a b c d"
+                                "e f g h"
+                                "h i j k";
+                                grid-column-gap: 20px;
+                                grid-row-gap: 10px;}
+    .grid_elem {margin-bottom: 6px;}
+
+    
+    .grid_faces_table{
+        margin-top: 45px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "a b c ";
+                                grid-column-gap:2%;
+                                grid-row-gap: 10px;}
+    .grid_elem {margin-bottom: 6px;}
+
+    .grid_elem h3{
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 18px;
+        font-family: "LatoBlack";
+        color: rgb(102, 109, 137);
+
+        letter-spacing:-0.009em ;
+      margin-top: 11px;
+      }
+      .grid_elem p{
+        text-align: justify;
+        font-size:12px;
+        font-family: "LatoLight";
+        letter-spacing:+0.0085em ;
+        font-weight: 900;
+        margin-top: 8px;
+        line-height: 21px;
+       }
+       .social_img {user-select:none;
+           padding-left: 1px;
+           margin-top: 24px;}
+    .social_img img {
+        padding-right: 4px;}
+    .social_img img:hover{cursor: pointer;
+        transform: scale(1.2);
+        transition: 1s; }
+.photo img {padding-left: 1px;}
