@@ -1,4 +1,4 @@
-@import url(/fonts.css);
+@import url(./fonts.css);
 
 * {
     margin:0;
@@ -110,7 +110,7 @@ h1:last-of-type:after {
                      height: 494px;
                      border-bottom:#ffffff 6px solid;}
 .services{
-                        margin-top: 67px;
+                        margin-top: 68px;
                         font-size: 30px;
                         line-height: 18px;
                         color: #666d89;
@@ -118,7 +118,7 @@ h1:last-of-type:after {
                         font-weight: 900;
                         text-align: left;}
 .services_info {
-    margin-top: 28px;
+    margin-top: 27px;
     font-size: 18px;
     height: 57px;
 
