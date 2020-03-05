@@ -1,0 +1,162 @@
+@import url(C:/Users/Алексей/Desktop/singolo/fonts.css);
+
+* {
+    margin:0;
+    padding:0;
+    outline:none;
+   
+    }
+.container{height: 730px;
+    width: 1020px;
+    margin:0 auto;
+display:block;}
+.wrapper{display: flex;
+    width: 1020px;
+    background-color: #f06c64;
+    border-bottom:#323746 6px solid;
+    }
+
+.Get_a_Quote{
+    align-items: left;
+   margin:0 auto;
+    height: 648px;
+    width: 940px;
+   
+   
+        }
+.upper_quote h1{
+   
+    font-size: 30px;
+    letter-spacing:-0.004em ;
+        margin-top: 70px;
+        margin-bottom: 0px;
+        line-height: 14px;
+        color: #ffffff;
+        font-family: 'LatoBlack';
+        font-weight: 900;
+        text-align: left;}
+
+.upper_quote p{
+    line-height: 30px;
+    font-size: 18px;
+    margin-top: 29px;
+   
+    letter-spacing:+0.0005em ;
+    color:  #ffffff;
+    font-family: 'LatoLight';
+    font-weight: 600;
+    text-align: justify;}
+
+          
+.upper_quote { width: 940px;}
+.quote_wrap {display:inline-flex;}
+
+   #quote_form {
+      
+    margin-top: 44px;
+  
+   
+    width: 620px;}
+    #author,#email ,#subject,#text_area{
+        border: 0px solid #f06c64;
+       height: 38px; 
+       width:604px;
+        border-radius: 5px;
+        
+        background-color: #d6564f;
+        padding-left:15px;
+        line-height: 30px;
+        font-size: 12px;
+        letter-spacing:-0.004em ;
+        font-family: 'LatoRegular';
+        font-weight: 300;
+        }
+        
+        #email ,#subject,#text_area{margin-top:16px ;}
+       
+        #text_area{height:198px;
+            padding-top:4px ;
+            color: #f48c8f;
+            resize: none;}
+        input::-webkit-input-placeholder { color: #f48c8f; }
+        textarea::-webkit-input-placeholder { color: #f48c8f; }
+
+.contact_info{margin-top: 38px;
+margin-left:20px ;}
+.contact_info h2{line-height: 30px;
+    font-size: 18px;
+    
+   
+    letter-spacing:+0.03em ;
+    color:  #ffffff;
+    font-family: 'LatoLight';
+    font-weight: 900;
+    text-align: justify;}
+.contact_info p {
+
+    word-wrap: break-word;
+    letter-spacing:+0.01em ;
+    line-height: 24px;
+    font-size: 12px;
+    margin-top:3px;
+    line-height: 22px;
+    color:  #ffffff;
+    font-family: 'LatoLight';
+    font-weight: 300;
+    text-align: justify;}
+    .contact_data {
+        margin-left:18px;
+        font-size: 12px;
+        line-height: 22px;
+        color: #f0d8d9;
+        font-family: "LatoLight";
+        font-weight: 400;
+        text-align: justify;
+        margin-top: 21px;
+       
+    }
+    .contact_data .place {
+        list-style-image: url('./assets/location.png');
+        margin-left: -1px;
+    }
+    .contact_data .phone {
+        list-style-image: url('./assets/phone_little.png');
+        margin-left: 1px;
+    margin-top: -1px;}
+        .contact-data span, .contact-data a {
+            padding-left: 5px;
+            letter-spacing: 0.04em;
+            text-decoration: none;
+            color: #ffffff;
+        }
+    
+    .contact_data .mail {
+        list-style-image: url('./assets/mail.png');
+        margin-left: 2px;
+    }
+    .contact_data span, .contact_data a {
+        padding-left: 5px;
+        letter-spacing: -0.0005em;
+        text-decoration: none;
+        color: #ffffff;
+    }
+    .footer {display: inline-flex;
+        height: 76px;
+        background-color: #2D303A;
+        width: 1020px;
+    }
+    .copy{
+        padding-left: 42px;
+     
+        padding-top:35px;
+        font-size: 12px;
+        line-height: 6px;
+        color: #666d89;
+        font-family: "LatoLight";
+        font-weight: 400;
+        text-align: left;}
+    .social_img_footer{
+        margin-top: 22px;
+        margin-left:693px;
+        text-align: right;}
+        .social_img_footer img {padding-right: 4px;}       
