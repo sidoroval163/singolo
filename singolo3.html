@@ -19,11 +19,11 @@
         <div class="quote_wrap">
             <div class="quote">
                 <form id="quote_form">
-                    <p><input type="text" placeholder="Name (Required)" name="author" id="author" value="" size="25" /></p>
-                    <p> <input type="email" placeholder="Email (Required)" name="email" id="email" value="" size="25" /></p>
-                    <p> <input type="text" placeholder="Subject" name="subject" id="subject" value="" size="25" /></p>
-                    <p><textarea rows="10" cols="45" placeholder="Describe your project in detail" id="text_area" name="textarea"></textarea></p>
-                    <p><input type="submit" value="Отправить"></p>
+                    <p><input type="text" placeholder="Name (Required)" name="author" id="author" pattern="[a-zA-Z]+" required size="25" /></p>
+                    <p> <input type="email" placeholder="Email (Required)" name="email" id="email"   size="25" /></p>
+                    <p> <input type="text" placeholder="Subject" name="subject" id="subject"  size="25" /></p>
+                    <p><textarea rows="10" cols="45" placeholder="Describe your project in detail..." id="text_area" name="textarea"></textarea></p>
+                    <p><input type="submit" value="Submit" id="submit"></p>
                 </form>
             </div>
             <div class="contact_info">

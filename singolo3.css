@@ -1,4 +1,4 @@
-@import url(C:/Users/Алексей/Desktop/singolo/fonts.css);
+@import url(./fonts.css);
 
 * {
     margin:0;
@@ -31,7 +31,7 @@ display:block;}
         margin-top: 70px;
         margin-bottom: 0px;
         line-height: 14px;
-        color: #ffffff;
+        color: #f0d8d9;
         font-family: 'LatoBlack';
         font-weight: 900;
         text-align: left;}
@@ -42,9 +42,9 @@ display:block;}
     margin-top: 29px;
    
     letter-spacing:+0.0005em ;
-    color:  #ffffff;
+    color:  #f0d8d9;
     font-family: 'LatoLight';
-    font-weight: 600;
+    font-weight: 300;
     text-align: justify;}
 
           
@@ -88,7 +88,7 @@ margin-left:20px ;}
     
    
     letter-spacing:+0.03em ;
-    color:  #ffffff;
+    color:  #f0d8d9;
     font-family: 'LatoLight';
     font-weight: 900;
     text-align: justify;}
@@ -100,7 +100,7 @@ margin-left:20px ;}
     font-size: 12px;
     margin-top:3px;
     line-height: 22px;
-    color:  #ffffff;
+    color:  #f0d8d9;
     font-family: 'LatoLight';
     font-weight: 300;
     text-align: justify;}
@@ -118,6 +118,7 @@ margin-left:20px ;}
     .contact_data .place {
         list-style-image: url('./assets/location.png');
         margin-left: -1px;
+        padding-top: 1px;
     }
     .contact_data .phone {
         list-style-image: url('./assets/phone_little.png');
@@ -127,7 +128,7 @@ margin-left:20px ;}
             padding-left: 5px;
             letter-spacing: 0.04em;
             text-decoration: none;
-            color: #ffffff;
+            color: #f0d8d9;
         }
     
     .contact_data .mail {
@@ -138,7 +139,7 @@ margin-left:20px ;}
         padding-left: 5px;
         letter-spacing: -0.0005em;
         text-decoration: none;
-        color: #ffffff;
+        color: #f0d8d9;
     }
     .footer {display: inline-flex;
         height: 76px;
@@ -159,4 +160,25 @@ margin-left:20px ;}
         margin-top: 22px;
         margin-left:693px;
         text-align: right;}
-        .social_img_footer img {padding-right: 4px;}       
+        .social_img_footer img {padding-right: 4px;}
+        .social_img_footer img:hover{  cursor: pointer;
+                transform: scale(1.2);
+                transition: 1s;}   
+                #submit {
+                    border-radius: 5px;
+                    background-color: transparent;
+                    border: 1px solid #f48c8f;
+                    font-size: 12px;
+                    line-height: 30px;
+                    color: #000000;
+                    font-family: "LatoBlack";
+                    font-weight: 400;
+                    text-align: center;
+                    margin-top: 15px;
+                    
+                }
+                
+                #submit:hover {
+                    cursor: pointer;
+                    outline: 0;
+                }
