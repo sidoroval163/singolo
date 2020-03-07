@@ -77,18 +77,18 @@ h1:last-of-type:after {
             background-color: #f06c64;
             border-bottom:#ea676b 6px solid;
 }
-.arrow_back {left: 484px;
+.arrow_back {left: 408px;
              top: 376px;}
 .arrow_forward{transform: scale(-1, 1);
-    left: 1406px;
+    left: 1330px;
     top: 376px;}   
     .arrow_back,.arrow_forward {opacity: .3; cursor: pointer;}    
     .arrow_back:active ,.arrow_forward:active{opacity: 1;}   
              
 .iphone_shadow_vertical, .iphone_container_vertical, .iphone_image_vertical,.iphone_container_horizontal, .iphone_shadow_horizontal,.iphone_image_horizontal,.arrow_back,.arrow_forward {position: absolute;}
-.iphone_container_vertical,.iphone_shadow_vertical {left: 554px;
+.iphone_container_vertical,.iphone_shadow_vertical {left: 478px;
                                            top: 148px;}
-.iphone_image_vertical {left: 567px;
+.iphone_image_vertical {left: 491px;
                          top: 212px;
                          border:#c7c8c7 1px solid;
                         }
@@ -96,11 +96,11 @@ h1:last-of-type:after {
 .iphone_container_vertical,.iphone_container_horizontal {z-index: 2;}
 .iphone_image_vertical, .iphone_image_horizontal {z-index: 3;}
 .iphone_container_horizontal,.iphone_shadow_horizontal {
-                            left:988px;
+                            left:912px;
                             top:147px;}
 .iphone_container_horizontal {transform:rotate(90deg);}
 .iphone_shadow_horizontal { transform: scale(1, -1) rotate(90deg);}
-.iphone_image_horizontal {left:926px;
+.iphone_image_horizontal {left:850px;
                         top:282px;
                         border:#c7c8c7 1px solid;}
 
