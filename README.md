@@ -1,1 +1,1 @@
- https://sidoroval163.github.io/singolo/singolo1
+ https://sidoroval163.github.io/singolo/index
