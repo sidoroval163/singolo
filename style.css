@@ -77,31 +77,31 @@ height: 89px;
             background-color: #f06c64;
             border-bottom:#ea676b 6px solid;
 }
-.arrow_back {left: 408px;
-             top: 376px;}
+.arrow_back {margin-left: 42px;
+    margin-top: 281px;}
 .arrow_forward{transform: scale(-1, 1);
-    left: 1330px;
-    top: 376px;}   
+    margin-left: 964px;
+    margin-top: 281px;}   
     .arrow_back,.arrow_forward {opacity: .3; cursor: pointer;}    
     .arrow_back:active ,.arrow_forward:active{opacity: 1;}   
              
 .iphone_shadow_vertical, .iphone_container_vertical, .iphone_image_vertical,.iphone_container_horizontal, .iphone_shadow_horizontal,.iphone_image_horizontal,.arrow_back,.arrow_forward {position: absolute;}
-.iphone_container_vertical,.iphone_shadow_vertical {left: 478px;
-                                           top: 148px;}
-.iphone_image_vertical {left: 491px;
-                         top: 212px;
+.iphone_container_vertical,.iphone_shadow_vertical {margin-left: 112px;
+    margin-top: 53px;}
+.iphone_image_vertical {margin-left: 125px;
+                         margin-top: 117px;
                          border:#c7c8c7 1px solid;
                         }
 .iphone_shadow_vertical,.iphone_shadow_horizontal {z-index: 1;}
 .iphone_container_vertical,.iphone_container_horizontal {z-index: 2;}
 .iphone_image_vertical, .iphone_image_horizontal {z-index: 3;}
 .iphone_container_horizontal,.iphone_shadow_horizontal {
-                            left:912px;
-                            top:147px;}
+                            margin-left:546px;
+                            margin-top:52px;}
 .iphone_container_horizontal {transform:rotate(90deg);}
 .iphone_shadow_horizontal { transform: scale(1, -1) rotate(90deg);}
-.iphone_image_horizontal {left:850px;
-                        top:282px;
+.iphone_image_horizontal {margin-left:484px;
+    margin-top:187px;
                         border:#c7c8c7 1px solid;}
 
 .Our_Services_block {display:flex;
