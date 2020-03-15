@@ -77,6 +77,20 @@ horizontal.addEventListener("click", () => {
   } else horizontal.style.display = "block";
   countScreenHorizontal++;
 });
+
+const tabs = document.getElementById("buttons");
+const random = document.getElementById("pictures");
+
+function Randomise() {
+  return Math.random();
+}
+function rnd() {
+  return Math.ceil(Randomise() * 100);
+}
+tabs.addEventListener("click", event => {
+  random.querySelectorAll("div").forEach(el => (el.style.order = rnd()));
+});
+
 const FORM_VALUES = { subject: "", textarea: "", author: "", email: "" };
 const form = document.querySelector("#quote_form");
 const formAuthorInput = document.querySelector("#author");
@@ -114,63 +128,161 @@ form.addEventListener("submit", event => {
   );
 });
 
-let slides = document.querySelectorAll("#slide");
-console.log(slides);
-let slider = [];
-for (let i = 0; i < slides.length; i++) {
-  slider[i] = slides[i];
-  slides[i].remove();
+let items = document.querySelectorAll(".carousel .item");
+let currentItem = 0;
+let isEnabled = true;
+console.log(items);
+function changeCurrentItem(n) {
+  currentItem = (n + items.length) % items.length;
 }
-console.log(slider);
-let step = 0;
-let offset = 0;
+console.log(currentItem);
+function hideItem(direction) {
+  isEnabled = false;
+  items[currentItem].classList.add(direction);
+  items[currentItem].addEventListener("animationend", function() {
+    this.classList.remove("activ", direction);
+  });
+}
 
-function draw() {
-  let img = document.createElement("div");
-  img = slider[step];
-  img.classList.add("slide");
-  img.style.left = offset * 1020 + "px";
-  document.querySelector("#slider").appendChild(img);
+function showItem(direction) {
+  items[currentItem].classList.add("next", direction);
+  items[currentItem].addEventListener("animationend", function() {
+    this.classList.remove("next", direction);
+    this.classList.add("activ");
+    isEnabled = true;
+  });
+}
 
-  if (step + 1 == slider.length) {
-    step = 0;
-  } else {
-    step++;
+function nextItem(n) {
+  hideItem("to-left");
+  changeCurrentItem(n + 1);
+  showItem("from-right");
+}
+
+function previousItem(n) {
+  hideItem("to-right");
+  changeCurrentItem(n - 1);
+  showItem("from-left");
+}
+
+document.querySelector("#arrowLeft").addEventListener("click", function() {
+  if (isEnabled) {
+    previousItem(currentItem);
   }
-  offset = 1;
-}
+});
 
-function left() {
-  document.querySelector("#arrowLeft").onclick = null;
-  let slide2 = document.querySelectorAll(".slide");
-  let offset2 = 0;
-  for (let i = 0; i < slide2.length; i++) {
-    slide2[i].style.left = offset2 * 1020 - 1020 + "px";
-    offset2++;
+document.querySelector("#arrowRight").addEventListener("click", function() {
+  if (isEnabled) {
+    nextItem(currentItem);
   }
-  setTimeout(function() {
-    slide2[0].remove();
-    draw();
-    document.querySelector("#arrowLeft").onclick = left;
-  }, 1000);
-}
+});
 
-function right() {
-  document.querySelector("#arrowRight").onclick = null;
-  let slide2 = document.querySelectorAll(".slide");
-  let offset2 = 0;
-  for (let i = 0; i < slide2.length; i++) {
-    slide2[i].style.left = offset2 * 1020 + 1020 + "px";
-    offset2++;
-  }
-  setTimeout(function() {
-    slide2[0].remove();
-    draw();
-    document.querySelector("#arrowRight").onclick = right;
-  }, 1000);
-}
+const swipedetect = el => {
+  let surface = el;
+  let startX = 0;
+  let startY = 0;
+  let distX = 0;
+  let distY = 0;
+  let startTime = 0;
+  let elapsedTime = 0;
 
-draw();
-draw();
-document.querySelector("#arrowLeft").onclick = left;
-document.querySelector("#arrowRight").onclick = right;
+  let threshold = 150;
+  let restraint = 100;
+  let allowedTime = 300;
+  surface.addEventListener(
+    "mousedown",
+    function(e) {
+      startX = e.pageX;
+      startY = e.pageY;
+      startTime = new Date().getTime();
+      e.preventDefault();
+    },
+    false
+  );
+
+  surface.addEventListener(
+    "mouseup",
+    function(e) {
+      distX = e.pageX - startX;
+      distY = e.pageY - startY;
+      elapsedTime = new Date().getTime() - startTime;
+      if (elapsedTime <= allowedTime) {
+        if (Math.abs(distX) >= threshold && Math.abs(distY) <= restraint) {
+          if (distX > 0) {
+            if (isEnabled) {
+              previousItem(currentItem);
+            }
+          } else {
+            if (isEnabled) {
+              nextItem(currentItem);
+            }
+          }
+        }
+      }
+      e.preventDefault();
+    },
+    false
+  );
+
+  surface.addEventListener(
+    "touchstart",
+    function(e) {
+      if (
+        e.target.classList.contains("arrow_") ||
+        e.target.classList.contains("control")
+      ) {
+        if (e.target.classList.contains("back")) {
+          if (isEnabled) {
+            previousItem(currentItem);
+          }
+        } else {
+          if (isEnabled) {
+            nextItem(currentItem);
+          }
+        }
+      }
+      var touchobj = e.changedTouches[0];
+      startX = touchobj.pageX;
+      startY = touchobj.pageY;
+      startTime = new Date().getTime();
+      e.preventDefault();
+    },
+    false
+  );
+
+  surface.addEventListener(
+    "touchmove",
+    function(e) {
+      e.preventDefault();
+    },
+    false
+  );
+
+  surface.addEventListener(
+    "touchend",
+    function(e) {
+      var touchobj = e.changedTouches[0];
+      distX = touchobj.pageX - startX;
+      distY = touchobj.pageY - startY;
+      elapsedTime = new Date().getTime() - startTime;
+      if (elapsedTime <= allowedTime) {
+        if (Math.abs(distX) >= threshold && Math.abs(distY) <= restraint) {
+          if (distX > 0) {
+            if (isEnabled) {
+              previousItem(currentItem);
+            }
+          } else {
+            if (isEnabled) {
+              nextItem(currentItem);
+            }
+          }
+        }
+      }
+      e.preventDefault();
+    },
+    false
+  );
+};
+
+var el = document.querySelector(".carousel");
+swipedetect(el);

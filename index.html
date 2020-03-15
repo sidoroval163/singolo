@@ -28,11 +28,11 @@
                 </div>
         </div>
     </header>
-    <div class="slider_block" id="home" > 
+    <div class="carousel" id="home" > 
         <img class="arrow_back" id="arrowLeft" src="assets/chev.png" alt="стрелка назад" width="16" height="27">
         <img class="arrow_forward" id="arrowRight" src="assets/chev.png" alt="стрелка вперед" width="16" height="27">
-    <div id="slider">
-        <div id="slide">
+    <div class="items-container">
+        <div class="item activ">
             <img class="iphone_shadow_vertical" src="assets/shadow.png" alt="тень от телефона лежащего вертикально" width="240" height="483">
             <img class="iphone_container_vertical" id="vertical_phone" src="assets/iphone_vertical.png" alt="телефон на боку" width="215" height="458">
             <img class="iphone_image_vertical" id="vertical" src="assets/img_verical.png" alt="картинка для вертикального положения телефона" width="188" height="333">
@@ -40,7 +40,7 @@
             <img class="iphone_shadow_horizontal" src="assets/shadow.png" alt="тень от телефона лежащего горизонтально" width="240" height="483">
             <img class="iphone_image_horizontal" id="horizontal" src="assets/img_horizonal.png" alt="картинка для горизонтального положения телефона" width="333" height="188">
         </div>
-        <div id="slide"><img src="assets/slider.jpg" alt="второй слайдер" width="1020" height="600"></div>
+        <div class="item"><img src="assets/slider.jpg" alt="второй слайдер" width="1020" height="600"></div>
     </div>
         
     </div>
@@ -89,10 +89,10 @@
                     <h1>Portfolio</h1>
                     <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
                         <div class="buttons" id="buttons">
-                            <span class="button_tag">All</span>
-					        <span class="button_tag">Web Design</span>
-					        <span class="button_tag">Graphic Design</span>
-					        <span class="button_tag">Artwork</span>
+                            <span class="button_tag"  >All</span>
+					        <span class="button_tag"  >Web Design</span>
+					        <span class="button_tag"  >Graphic Design</span>
+					        <span class="button_tag"  >Artwork</span>
                         </div>
                         <div class="grid_img_table" id="pictures"> 
                            <div class="grid_elem pic_1" ><img src="assets/ship.png" alt="корабль"></div> 
@@ -199,7 +199,14 @@
                     <li class="phone"><a href="tel:035283318635">03528 331 86 35</a></li> 
                     <li class="mail"><a href="mailto:info@singolo.com">info@singolo.com</a></li> 
                 </ul>
-            </div> 
+            </div>
+                <div id="message-block" class="hidden">
+                    <div id="message" class="hidden">
+                        <p>Text: <span id="result"></span></p>
+                        <br>
+                        <button id='close-btn'>OK</button>
+                    </div>
+                </div> 
         </div>   
         </div>
         

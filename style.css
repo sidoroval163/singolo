@@ -84,7 +84,8 @@ a {
   color: #f06c64;
 }
 
-.slider_block {
+.carousel {
+  overflow: hidden;
   width: 1020px;
   height: 594px;
   background-color: #f06c64;
@@ -387,7 +388,6 @@ a {
 
 .grid_img_table {
   max-height: 620px;
-  overflow: hidden;
 
   margin-top: 19px;
   display: grid;
@@ -669,7 +669,9 @@ textarea::-webkit-input-placeholder {
   z-index: 5;
   top: 0;
 }
-
+#buttons {
+  width: 300px;
+}
 #buttons span.active {
   color: rgb(43, 240, 3);
   cursor: default;
@@ -677,23 +679,107 @@ textarea::-webkit-input-placeholder {
 #pictures img.active {
   border: 5px #f06c64 solid;
   cursor: default;
+  margin: -5px;
 }
-#slider {
-  width: 1020px;
-  height: 594px;
 
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-}
-.slide {
-  width: 1020px;
-  height: 594px;
+#message-block {
+  z-index: 8;
   position: absolute;
-  transition: all ease 1s;
-  left: 0;
+  width: 100vw;
+  height: 100vh;
   top: 0;
+  left: 0;
+  background: #0008;
 }
-.second_slide {
-  z-index: 6;
+
+#message-block.hidden {
+  display: none;
+}
+
+#message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.items-container {
+  position: relative;
+  width: 100%;
+}
+
+.item {
+  display: none;
+  position: relative;
+  animation: 1s ease-in-out;
+  margin: 0 auto;
+}
+
+.activ,
+.next {
+  display: block;
+}
+
+.next {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.to-left {
+  animation-name: left;
+}
+
+.from-right {
+  animation-name: right;
+}
+
+.to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .description {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .control > .arrow {
+    display: none;
+  }
+
+  .project-name {
+    display: none;
+  }
+
+  .description {
+    border: 0;
+  }
 }
