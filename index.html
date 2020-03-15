@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
@@ -8,37 +8,43 @@
    </head>
    <!-- SINGOLO 1 -->
 <body>
-    <div class="wrapper">
-        <header class="header_first">
-            <div class="container">
-                <div class="header_content_first">
-                 <div class="logo"><h1>SINGOLO</h1></div>
+    <div class="wrapper"  >
+        <header class="header_first" id="myHeader" >
+            <div class="container" >
+                <div class="header_content_first" >
+                 <div class="logo" ><h1>SINGOLO</h1></div>
                
-                    <ul class="inline_table_menu"> 
-                    <li class="menu_element">HOME</li>
+                    <ul class="inline_table_menu" id="menu"> 
+                        <li class="menu_element"><a href="#home"> HOME</a></li>
                     <li class="divider">·</li>
-                    <li class="menu_element">SERVICES</li>
+                    <li class="menu_element"><a href="#services">SERVICES</a></li>
                     <li class="divider">·</li>
-                    <li class="menu_element">PORTFOLIO</li>
+                    <li class="menu_element"><a href="#portfolio">PORTFOLIO</a></li>
                     <li class="divider">·</li>
-                    <li class="menu_element">ABOUT</li>
+                    <li class="menu_element"><a href="#about">ABOUT</a></li>
                     <li class="divider">·</li>
-                    <li class="menu_element">CONTACT</li>
+                  <li class="menu_element">  <a href="#contact">CONTACT</a></li>
                 </ul>
                 </div>
         </div>
     </header>
-    <div class="slider_block"> 
-        <img class="arrow_back" src="assets/chev.png" alt="стрелка назад" width="16" height="27">
-        <img class="iphone_shadow_vertical" src="assets/shadow.png" alt="тень от телефона лежащего вертикально" width="240" height="483">
-        <img class="iphone_container_vertical" src="assets/iphone_vertical.png" alt="телефон на боку" width="215" height="458">
-        <img class="iphone_image_vertical" src="assets/img_verical.png" alt="картинка для вертикального положения телефона" width="188" height="333">
-        <img class="iphone_container_horizontal" src="assets/iphone_vertical.png" alt="телефон на боку" width="215" height="458">
-        <img class="iphone_shadow_horizontal" src="assets/shadow.png" alt="тень от телефона лежащего горизонтально" width="240" height="483">
-        <img class="iphone_image_horizontal" src="assets/img_horizonal.png" alt="картинка для горизонтального положения телефона" width="333" height="188">
-        <img class="arrow_forward" src="assets/chev.png" alt="стрелка вперед" width="16" height="27">
+    <div class="slider_block" id="home" > 
+        <img class="arrow_back" id="arrowLeft" src="assets/chev.png" alt="стрелка назад" width="16" height="27">
+        <img class="arrow_forward" id="arrowRight" src="assets/chev.png" alt="стрелка вперед" width="16" height="27">
+    <div id="slider">
+        <div id="slide">
+            <img class="iphone_shadow_vertical" src="assets/shadow.png" alt="тень от телефона лежащего вертикально" width="240" height="483">
+            <img class="iphone_container_vertical" id="vertical_phone" src="assets/iphone_vertical.png" alt="телефон на боку" width="215" height="458">
+            <img class="iphone_image_vertical" id="vertical" src="assets/img_verical.png" alt="картинка для вертикального положения телефона" width="188" height="333">
+            <img class="iphone_container_horizontal" id="horizontal_phone" src="assets/iphone_vertical.png" alt="телефон на боку" width="215" height="458">
+            <img class="iphone_shadow_horizontal" src="assets/shadow.png" alt="тень от телефона лежащего горизонтально" width="240" height="483">
+            <img class="iphone_image_horizontal" id="horizontal" src="assets/img_horizonal.png" alt="картинка для горизонтального положения телефона" width="333" height="188">
+        </div>
+        <div id="slide"><img src="assets/slider.jpg" alt="второй слайдер" width="1020" height="600"></div>
     </div>
-    <div class="Our_Services_block">    
+        
+    </div>
+    <div class="Our_Services_block" id="services" >    
         <div class="services_container"> 
              <div class="services">Our Services</div>
              <div class="services_info">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, 
@@ -79,17 +85,17 @@
         <header class="header_second">
         <div class="container">
             <div class="header_content">
-                <div class="portfolio">
+                <div class="portfolio" id="portfolio">
                     <h1>Portfolio</h1>
                     <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                        <div class="buttons">
+                        <div class="buttons" id="buttons">
                             <span class="button_tag">All</span>
 					        <span class="button_tag">Web Design</span>
 					        <span class="button_tag">Graphic Design</span>
 					        <span class="button_tag">Artwork</span>
                         </div>
-                        <div class="grid_img_table"> 
-                           <div class="grid_elem pic_1"><img src="assets/ship.png" alt="корабль"></div> 
+                        <div class="grid_img_table" id="pictures"> 
+                           <div class="grid_elem pic_1" ><img src="assets/ship.png" alt="корабль"></div> 
                            <div class="grid_elem pic_2"><img src="assets/cute_girl.png" alt="милая девушка"></div> 
                            <div class="grid_elem pic_3"><img src="assets/city.png" alt="город"></div> 
                            <div class="grid_elem pic_4"><img src="assets/robot.png" alt="робот"></div> 
@@ -110,7 +116,7 @@
         </div>
     </header>
 
-<div class="about_wrapper">
+<div class="about_wrapper" id="about">
     <div class="about_us"> 
         <div class="about_us_text">
             <h2>About Us</h2>
@@ -165,11 +171,11 @@
         </div>
   </div>  
 </div>    
- <!-- SINGOLO 3gi -->      
+ <!-- SINGOLO 3 -->      
 <div class="container_third">
     <div class="wrapper_third">
         <div class="Get_a_Quote">   
-            <div class="upper_quote">
+            <div class="upper_quote" >
                 <h1>Get a Quote</h1> 
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, 
                  nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
@@ -185,11 +191,11 @@
                     <p><input type="submit" value="Submit" id="submit"></p>
                 </form>
             </div>
-            <div class="contact_info">
+            <div class="contact_info" >
                 <h2>Contact information</h2>
                 <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver- ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
                 <ul class="contact_data">
-                    <li class="place"><span>Elm St. 14/05 Lost City</span></li>
+                    <li class="place"id="contact"><span>Elm St. 14/05 Lost City</span></li>
                     <li class="phone"><a href="tel:035283318635">03528 331 86 35</a></li> 
                     <li class="mail"><a href="mailto:info@singolo.com">info@singolo.com</a></li> 
                 </ul>
@@ -198,12 +204,12 @@
         </div>
         
     </div>
-    <footer class="footer">
+    <footer class="footer" >
         <div class="copy">
           <p> &copy; Copyright 2013</p> 
         </div>
     
-        <div class="social_img_footer">
+        <div class="social_img_footer"  >
             <img src="assets/facebook.png" alt="фейсбук"> 
             <img src="assets/google.png" alt="гугл">
             <img src="assets/twitter.png" alt="твиттер">
@@ -213,5 +219,7 @@
 
 </div>
 </div> 
+
+<script defer src="script.js"></script>
 </body>
 </html>
