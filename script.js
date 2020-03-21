@@ -124,8 +124,12 @@ form.addEventListener("submit", event => {
         ? "Без описания"
         : "Описание: " + FORM_VALUES.textarea
     }
-    `
+    
+     `
   );
+  quote_form
+    .querySelectorAll("#author, textarea, #email, #subject")
+    .forEach(el => (el.value = ""));
 });
 
 let items = document.querySelectorAll(".carousel .item");
@@ -283,6 +287,32 @@ const swipedetect = el => {
     false
   );
 };
+
+const scroll = document.querySelectorAll('a[href^="#"]');
+
+window.addEventListener("scroll", () => {
+  console.log(pageYOffset);
+  if (pageYOffset < 600) {
+    menu.querySelectorAll("a").forEach(el => el.classList.remove("active"));
+    scroll[0].classList.add("active");
+  }
+  if (pageYOffset > 600) {
+    menu.querySelectorAll("a").forEach(el => el.classList.remove("active"));
+    scroll[1].classList.add("active");
+  }
+  if (pageYOffset > 1050) {
+    menu.querySelectorAll("a").forEach(el => el.classList.remove("active"));
+    scroll[2].classList.add("active");
+  }
+  if (pageYOffset > 1900) {
+    menu.querySelectorAll("a").forEach(el => el.classList.remove("active"));
+    scroll[3].classList.add("active");
+  }
+  if (pageYOffset > 2500) {
+    menu.querySelectorAll("a").forEach(el => el.classList.remove("active"));
+    scroll[4].classList.add("active");
+  }
+});
 
 var el = document.querySelector(".carousel");
 swipedetect(el);
