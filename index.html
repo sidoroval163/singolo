@@ -1,232 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head >
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <title>SINGOLO</title>
-   </head>
-   <!-- SINGOLO 1 -->
+</head>
+<!-- SINGOLO 1 -->
+
 <body>
-    <div class="wrapper"  >
-        <header class="header_first" id="myHeader" >
-            <div class="container" >
-                <div class="header_content_first" >
-                 <div class="logo" ><h1>SINGOLO</h1></div>
-               
-                    <ul class="inline_table_menu" id="menu"> 
-                        <li class="menu_element"><a href="#home"> HOME</a></li>
-                    <li class="divider">·</li>
-                    <li class="menu_element"><a href="#services">SERVICES</a></li>
-                    <li class="divider">·</li>
-                    <li class="menu_element"><a href="#portfolio">PORTFOLIO</a></li>
-                    <li class="divider">·</li>
-                    <li class="menu_element"><a href="#about">ABOUT</a></li>
-                    <li class="divider">·</li>
-                  <li class="menu_element">  <a href="#contact">CONTACT</a></li>
-                </ul>
-                </div>
-        </div>
-    </header>
-    <div class="carousel" id="home" > 
-        <img class="arrow_back" id="arrowLeft" src="assets/chev.png" alt="стрелка назад" width="16" height="27">
-        <img class="arrow_forward" id="arrowRight" src="assets/chev.png" alt="стрелка вперед" width="16" height="27">
-    <div class="items-container">
-        <div class="item activ">
-            <img class="iphone_shadow_vertical" src="assets/shadow.png" alt="тень от телефона лежащего вертикально" width="240" height="483">
-            <img class="iphone_container_vertical" id="vertical_phone" src="assets/iphone_vertical.png" alt="телефон на боку" width="215" height="458">
-            <img class="iphone_image_vertical" id="vertical" src="assets/img_verical.png" alt="картинка для вертикального положения телефона" width="188" height="333">
-            <img class="iphone_container_horizontal" id="horizontal_phone" src="assets/iphone_vertical.png" alt="телефон на боку" width="215" height="458">
-            <img class="iphone_shadow_horizontal" src="assets/shadow.png" alt="тень от телефона лежащего горизонтально" width="240" height="483">
-            <img class="iphone_image_horizontal" id="horizontal" src="assets/img_horizonal.png" alt="картинка для горизонтального положения телефона" width="333" height="188">
-        </div>
-        <div class="item"><img src="assets/slider.jpg" alt="второй слайдер" width="1020" height="600"></div>
-    </div>
-        
-    </div>
-    <div class="Our_Services_block" id="services" >    
-        <div class="services_container"> 
-             <div class="services">Our Services</div>
-             <div class="services_info">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, 
-                 eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
-            </div>
-             <div class="grid_table"> 
-                 <div class="design">
-                   <div class="table_img"><img src="assets/pen.png" alt="Ручка"></div>   
-                     <div class="table_text"> <h2>Custom Design</h2>
-                    <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p></div>
-                 </div>  
-                 <div class="inovative">   
-                      <div class="table_img_center"><img src="assets/bulb.png" alt="Лампа"></div>   
-                        <div class="table_text"> <h2>Inovative Ideas</h2>
-                            <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p></div>
-                </div> 
-                 <div class="love"><div class="table_img"><img src="assets/heart.png" alt="Сердце"></div>   
-                    <div class="table_text"> <h2>Love Is The Answer</h2>
-                    <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p></div>
-               </div> 
-                 <div class="responsive"><div class="table_img"><img src="assets/phone.png" alt="Телефон"></div>   
-                        <div class="table_text"> <h2>Responsive Layout</h2>
-                        <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p></div>
-                </div>         
-                 <div class="all_day"><div class="table_img_center"><img src="assets/bubble.png" alt="Пузырь"></div>   
-                         <div class="table_text"> <h2>24/7 Support</h2>
-                         <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p></div>
-                </div> 
-                 <div class="feel"><div class="table_img"><img src="assets/star.png" alt="Звезда"></div>   
-                            <div class="table_text"> <h2>Feel Like A Star</h2>
-                             <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p></div>
-                            </div> 
-            </div>
-        </div>
-    </div>
-     <!-- SINGOLO 2 -->
+    <div id="home"></div>
     <div class="wrapper">
-        <header class="header_second">
-        <div class="container">
-            <div class="header_content">
-                <div class="portfolio" id="portfolio">
-                    <h1>Portfolio</h1>
-                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                        <div class="buttons" id="buttons">
-                            <span class="button_tag"  >All</span>
-					        <span class="button_tag"  >Web Design</span>
-					        <span class="button_tag"  >Graphic Design</span>
-					        <span class="button_tag"  >Artwork</span>
-                        </div>
-                        <div class="grid_img_table" id="pictures"> 
-                           <div class="grid_elem pic_1" ><img src="assets/ship.png" alt="корабль"></div> 
-                           <div class="grid_elem pic_2"><img src="assets/cute_girl.png" alt="милая девушка"></div> 
-                           <div class="grid_elem pic_3"><img src="assets/city.png" alt="город"></div> 
-                           <div class="grid_elem pic_4"><img src="assets/robot.png" alt="робот"></div> 
-                           <div class="grid_elem pic_5"><img src="assets/butt_ons.png" alt="красненькие"></div> 
-                           <div class="grid_elem pic_6"><img src="assets/sdk.png" alt="сдк"></div> 
-                           <div class="grid_elem pic_7"><img src="assets/space.png" alt="космос"></div> 
-                           <div class="grid_elem pic_8"><img src="assets/chiks.png" alt="куры"></div> 
-                           <div class="grid_elem pic_9"><img src="assets/dino.png" alt="динозавр"></div> 
-                           <div class="grid_elem pic_10"><img src="assets/tape.png" alt="плёнка"></div> 
-                           <div class="grid_elem pic_11"><img src="assets/monster.png" alt="монстр брррр"></div> 
-                           <div class="grid_elem pic_12"><img src="assets/amp_meter.png" alt="какой то изм прибор"></div> 
-                        
+        <header class="header_first" id="myHeader">
+            <div class="container">
+                <div class="header_content_first">
+                   
+                    <div class="logo">
+                        <h1>SINGOLO</h1>
+                    </div>
+
+                        <div class="menu" id="menu">
+                            <ul>
+                            <li><img class="ham" id="ham" src="assets/ham.svg" alt=""></li>
+                            <li class="menu_element"><a class="point active" href="#home">HOME</a></li>
+                            <li class="menu_element"><a class="point" href="#services">SERVICES</a></li>
+                            <li class="menu_element"><a class="point" href="#portfolio">PORTFOLIO</a></li>
+                            <li class="menu_element"><a class="point" href="#about">ABOUT</a></li>
+                            <li class="menu_element"><a class="point" href="#contact">CONTACT</a></li>
+                             </ul>
                         </div>
                 </div>
-               
+            </div>
+        </header>
+        <div class="carousel">
+            
+            <img class="arrow_back" id="arrowLeft" src="assets/chev.png" alt="стрелка назад" width="16" height="27">
+            <img class="arrow_forward" id="arrowRight" src="assets/chev.png" alt="стрелка вперед" width="16"
+                height="27">
+            <div class="items-container">
+                <div class="item activ">
+                    <img class="iphone_shadow_vertical" src="assets/shadow.png"
+                        alt="тень от телефона лежащего вертикально" width="240" height="483">
+                    <img class="iphone_container_vertical" id="vertical_phone" src="assets/iphone_vertical.png"
+                        alt="телефон на боку" width="215" height="458">
+                    <img class="iphone_image_vertical" id="vertical" src="assets/img_verical.png"
+                        alt="картинка для вертикального положения телефона" width="188" height="333">
+                    <img class="iphone_container_horizontal" id="horizontal_phone" src="assets/iphone_vertical.png"
+                        alt="телефон на боку" width="215" height="458">
+                    <img class="iphone_shadow_horizontal" src="assets/shadow.png"
+                        alt="тень от телефона лежащего горизонтально" width="240" height="483">
+                    <img class="iphone_image_horizontal" id="horizontal" src="assets/img_horizonal.png"
+                        alt="картинка для горизонтального положения телефона" width="333" height="188">
+                </div>
+                <div class="item"><img src="assets/slider.jpg" alt="второй слайдер" max-width="1020" max-height="600"></div>
+            </div>
+
+        </div>
+        
+        <div class="Our_Services_block" >
+            <div class="services"  >Our Services</div>
+            <div class="services_info"  >Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
+                mollis, non commodo luctus, nisi erat porttitor ligula,
+                eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                nibh.
+            </div>
+            <div class="grid_table">
+                <div class="design">
+                    <div class="table_img"><img src="assets/pen.png" alt="Ручка"></div>
+                    <div class="table_text">
+                        <h2>Custom Design</h2>
+                        <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus
+                            ut, ultrices velit.</p>
+                    </div>
+                </div>
+                <div class="inovative">
+                    <div class="table_img_center" ><img src="assets/bulb.png" alt="Лампа"></div>
+                    <div class="table_text">
+                        <h2>Inovative Ideas</h2>
+                        <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus
+                            dolor id lorem.</p>
+                    </div>
+                </div>
+                <div class="love">
+                    <div class="table_img"><img src="assets/heart.png" alt="Сердце"></div>
+                    <div class="table_text">
+                        <h2>Love Is The Answer</h2>
+                        <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
+                            Quisque condimentum.</p>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="table_img"><img src="assets/phone.png" alt="Телефон"></div>
+                    <div class="table_text">
+                        <h2>Responsive Layout</h2>
+                        <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent
+                            elit leo.</p>
+                    </div>
+                </div>
+                <div class="all_day">
+                    <div class="table_img_center"><img src="assets/bubble.png" alt="Пузырь"></div>
+                    <div class="table_text">
+                        <h2 >24/7 Support</h2>
+                        <p id="services">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat.
+                            Pellentesque egestas venenatis lorem .</p>
+                    </div>
+                </div>
+                <div class="feel">
+                    <div class="table_img" ><img src="assets/star.png" alt="Звезда"></div>
+                    <div class="table_text">
+                        <h2>Feel Like A Star</h2>
+                        <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam
+                            tellus.</p>
+                    </div>
+                </div>
             </div>
             
         </div>
-    </header>
+        <!-- SINGOLO 2 -->
+        <div class="wrapper">
+            <header class="header_second">
+                <div class="container">
+                    <div class="portfolio">
+                        <h1 >Portfolio</h1>
+                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem
+                            nec elit.</p>
+                        <div class="buttons" id="buttons">
+                            <span class="button_tag">All</span>
+                            <span class="button_tag">Web Design</span>
+                            <span class="button_tag">Graphic Design</span>
+                            <span class="button_tag">Artwork</span>
+                        </div><div id="portfolio" class="centered"></div>
+                        <div class="grid_img_table" id="pictures">
+                            <div class="grid_elem pic_1"><img class="image" src="assets/ship.png" alt="корабль"></div>
+                            <div class="grid_elem pic_2" ><img class="image" src="assets/cute_girl.png"
+                                    alt="милая девушка"></div>
+                            <div class="grid_elem pic_3" ><img class="image" src="assets/city.png" alt="город"></div>
+                            <div class="grid_elem pic_4"><img class="image" src="assets/robot.png" alt="робот"></div>
+                            <div class="grid_elem pic_5"><img class="image" src="assets/butt_ons.png" alt="красненькие">
+                            </div>
+                            <div class="grid_elem pic_6" ><img class="image" src="assets/sdk.png" alt="сдк"></div>
+                            <div class="grid_elem pic_7"><img class="image" src="assets/space.png" alt="космос"></div>
+                            <div class="grid_elem pic_8" ><img class="image" src="assets/chiks.png" alt="куры"></div>
+                            <div class="grid_elem pic_9" ><img class="image" src="assets/dino.png" alt="динозавр"></div>
+                            <div class="grid_elem pic_10"><img class="image" src="assets/tape.png" alt="плёнка"></div>
+                            <div class="grid_elem pic_11"><img class="image" src="assets/monster.png"
+                                    alt="монстр брррр"></div>
+                            <div class="grid_elem pic_12"><img class="image" src="assets/amp_meter.png"
+                                    alt="какой то изм прибор">
+                            </div>
 
-<div class="about_wrapper" id="about">
-    <div class="about_us"> 
-        <div class="about_us_text">
-            <h2>About Us</h2>
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            <div class="grid_faces_table">  
-                <div class="grid_elem">
-                    <div>
-                        <img src="assets/Adam.png" alt="Жизнерадостная Адам">
-                    </div>
-                    <div>
-                    <h3>Adam Jensen</h3>  
-                    <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-                    </div>
-                    <div class="social_img">
-                        <img src="assets/facebook.png" alt="фейсбук"> 
-                        <img src="assets/google.png" alt="гугл">
-                        <img src="assets/twitter.png" alt="твиттер">
-                        <img src="assets/linkedIn.png" alt="линкедин">
+                        </div>
                     </div>
                 </div>
-                <div class="grid_elem">
-                    <div class="photo_two">
-                        <img  src="assets/Desmond.png" alt="Обаятельный Десмонд">
-                    </div>
-                    <div>
-                    <h3>Desmond Miles</h3> 
-                    <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p> 
-                    </div>
-                    <div class="social_img">
-                        <img src="assets/facebook.png" alt="фейсбук"> 
-                        <img src="assets/google.png" alt="гугл">
-                        <img src="assets/twitter.png" alt="твиттер">
-                        <img src="assets/linkedIn.png" alt="линкедин">
-                    </div>
-                </div>
-                <div class="grid_elem">
-                    <div class="photo">
-                        <img src="assets/Scolara.png" alt="Сколара с трудным именем">
-                    </div>
-                    <div>
-                    <h3>Scolara Visari</h3> 
-                    <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p> 
-                    </div>
-                    <div class="social_img">
-                        <img src="assets/facebook.png" alt="фейсбук"> 
-                        <img src="assets/google.png" alt="гугл">
-                        <img src="assets/twitter.png" alt="твиттер">
-                        <img src="assets/linkedIn.png" alt="линкедин">
+            </header>
+
+            <div class="about_us" id="about">
+                <div class="about_us_text">
+                    <h2>About Us</h2>
+                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo
+                        luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac
+                        cursus commodo, tortor mauris condimentum nibh.</p>
+                    <div class="grid_faces_table">
+                        <div class="grid_elem">
+                            <div>
+                                <img class="image" src="assets/Adam.png" alt="Жизнерадостная Адам">
+                            </div>
+                            <div>
+                                <h3>Adam Jensen</h3>
+                                <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum
+                                    tellus dolor id lorem.</p>
+                            </div>
+                            <div class="social_img">
+                                <img src="assets/facebook.png" alt="фейсбук">
+                                <img src="assets/google.png" alt="гугл">
+                                <img src="assets/twitter.png" alt="твиттер">
+                                <img src="assets/linkedIn.png" alt="линкедин">
+                            </div>
+                        </div>
+                        <div class="grid_elem">
+                            <div class="photo_two">
+                                <img class="image" src="assets/Desmond.png" alt="Обаятельный Десмонд">
+                            </div>
+                            <div>
+                                <h3>Desmond Miles</h3>
+                                <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra
+                                    lacus ut, ultrices velit.</p>
+                            </div>
+                            <div class="social_img">
+                                <img src="assets/facebook.png" alt="фейсбук">
+                                <img src="assets/google.png" alt="гугл">
+                                <img src="assets/twitter.png" alt="твиттер">
+                                <img src="assets/linkedIn.png" alt="линкедин">
+                            </div>
+                        </div>
+                        <div class="grid_elem">
+                            <div class="photo">
+                                <img class="image" src="assets/Scolara.png" alt="Сколара с трудным именем">
+                            </div>
+                            <div>
+                                <h3>Scolara Visari</h3>
+                                <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat
+                                    felis. Quisque condimentum.</p>
+                            </div>
+                            <div class="social_img">
+                                <img src="assets/facebook.png" alt="фейсбук">
+                                <img src="assets/google.png" alt="гугл">
+                                <img src="assets/twitter.png" alt="твиттер">
+                                <img src="assets/linkedIn.png" alt="линкедин">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
-  </div>  
-</div>    
- <!-- SINGOLO 3 -->      
-<div class="container_third">
-    <div class="wrapper_third">
-        <div class="Get_a_Quote">   
-            <div class="upper_quote" >
-                <h1>Get a Quote</h1> 
-                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, 
-                 nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
-               tortor mauris condimentum nibh.</p>
-            </div> 
-        <div class="quote_wrap">
-            <div class="quote">
-                <form id="quote_form">
-                    <p><input type="text" placeholder="Name (Required)" name="author" id="author" pattern="[a-zA-Z]+" required size="25" /></p>
-                    <p> <input type="email" placeholder="Email (Required)" name="email" id="email"   size="25" /></p>
-                    <p> <input type="text" placeholder="Subject" name="subject" id="subject"  size="25" /></p>
-                    <p><textarea rows="10" cols="45" placeholder="Describe your project in detail..." id="text_area" name="textarea"></textarea></p>
-                    <p><input type="submit" value="Submit" id="submit"></p>
-                </form>
-            </div>
-            <div class="contact_info" >
-                <h2>Contact information</h2>
-                <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver- ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
-                <ul class="contact_data">
-                    <li class="place"id="contact"><span>Elm St. 14/05 Lost City</span></li>
-                    <li class="phone"><a href="tel:035283318635">03528 331 86 35</a></li> 
-                    <li class="mail"><a href="mailto:info@singolo.com">info@singolo.com</a></li> 
-                </ul>
-            </div>
-                <div id="message-block" class="hidden">
-                    <div id="message" class="hidden">
-                        <p>Text: <span id="result"></span></p>
-                        <br>
-                        <button id='close-btn'>OK</button>
+        <!-- SINGOLO 3 -->
+        <div class="container_third">
+            <div class="Get_a_Quote ">
+                <div class="upper_quote">
+                    <h1>Get a Quote</h1>
+                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
+                        commodo luctus,
+                        nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac
+                        cursus commodo,
+                        tortor mauris condimentum nibh.</p>
+                </div>
+                <div class="quote_wrap">
+                    <div class="quote">
+                        <form id="quote_form">
+                            <input type="text" placeholder="Name (Required)" name="author" id="author"
+                                pattern="[a-zA-Z]+" required size="25" />
+                            <input type="email" placeholder="Email (Required)" name="email" id="email" size="25" />
+
+                            <input type="text" placeholder="Subject" name="subject" id="subject" size="25" />
+
+                            <textarea rows="10" cols="45" placeholder="Describe your project in detail..."
+                                id="text_area" name="textarea"></textarea>
+                            <input type="submit" value="Submit" id="submit">
+                        </form>
                     </div>
-                </div> 
-        </div>   
-        </div>
-        
-    </div>
-    <footer class="footer" >
-        <div class="copy">
-          <p> &copy; Copyright 2013</p> 
-        </div>
-    
-        <div class="social_img_footer"  >
-            <img src="assets/facebook.png" alt="фейсбук"> 
-            <img src="assets/google.png" alt="гугл">
-            <img src="assets/twitter.png" alt="твиттер">
-            <img src="assets/linkedIn.png" alt="линкедин">
-        </div>
-    </footer>
+                    <div class="contact_info">
+                        <h2>Contact information</h2>
+                        <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver- ra nibh. Fusce vitae
+                            aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus
+                            faucibus. Morbi at aliquet turpis, et consequat felis.</p>
+                        <ul class="contact_data">
+                            <li class="place" id="contact"><span>Elm St. 14/05 Lost City</span></li>
+                            <li class="phone"><a href="tel:035283318635">03528 331 86 35</a></li>
+                            <li class="mail"><a href="mailto:info@singolo.com">info@singolo.com</a></li>
+                        </ul>
+                    </div>
+                    <div id="message-block" class="hidden">
+                        <div id="message" class="hidden">
+                            <p>Text: <span id="result"></span></p>
+                            <br>
+                            <button id='close-btn'>OK</button>
+                        </div>
+                    </div>
+                </div>
 
-</div>
-</div> 
 
-<script defer src="script.js"></script>
+            </div>
+            <footer class="footer">
+                <div class="copy">
+                    <p> &copy; Copyright 2013</p>
+                </div>
+
+                <div class="social_img_footer">
+                    <img src="assets/facebook.png" alt="фейсбук">
+                    <img src="assets/google.png" alt="гугл">
+                    <img src="assets/twitter.png" alt="твиттер">
+                    <img src="assets/linkedIn.png" alt="линкедин">
+                </div>
+            </footer>
+
+        </div>
+        <script defer src="script.js"></script>
+        <script defer src="menu.js"></script>
 </body>
+
 </html>
