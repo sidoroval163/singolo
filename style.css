@@ -821,6 +821,11 @@ textarea::-webkit-input-placeholder {
   #quote_form {
     min-width: 420px;
   }
+  .arrow_back,
+  .arrow_forward {
+    width: 20px;
+    height: 40px;
+  }
 }
 @media (max-width: 375px) {
   .carousel {
@@ -955,6 +960,11 @@ textarea::-webkit-input-placeholder {
 
   .point::before {
     display: none;
+  }
+  .arrow_back,
+  .arrow_forward {
+    width: 30px;
+    height: 50px;
   }
 }
 @media (max-width: 320px) {
