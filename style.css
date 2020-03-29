@@ -800,6 +800,7 @@ textarea::-webkit-input-placeholder {
       "c d"
       "e f";
   }
+
   .header_second {
     max-width: 768px;
     height: max-content;
