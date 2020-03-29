@@ -397,6 +397,7 @@ li:nth-child(2) .point::before {
   margin-top: 19px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+
   grid-template-areas:
     "a b c d"
     "e f g h"
@@ -857,9 +858,10 @@ textarea::-webkit-input-placeholder {
   .header_second {
     max-width: 375px;
     height: max-content;
+    padding-bottom: 0px;
   }
   .portfolio {
-    max-height: 800px;
+    max-height: 750px;
   }
   .header_content {
     max-width: 375px;
@@ -871,12 +873,18 @@ textarea::-webkit-input-placeholder {
     height: max-content;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
     grid-template-areas:
       "a b "
       "c d "
       "e f"
-      "g h";
+      "g h"
+      "i j";
   }
+  .grid_img_table > :nth-child(n + 9) {
+    display: none;
+  }
+
   .grid_faces_table {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -938,6 +946,10 @@ textarea::-webkit-input-placeholder {
     padding-left: 69px;
     order: 1;
   }
+  .logo h1 {
+    padding-left: 20px;
+  }
+
   #ham {
     display: block;
 
@@ -970,6 +982,10 @@ textarea::-webkit-input-placeholder {
   .arrow_forward {
     width: 30px;
     height: 50px;
+  }
+  #menu a.active {
+    color: rgb(214, 100, 94);
+    cursor: default;
   }
 }
 @media (max-width: 320px) {
@@ -1009,6 +1025,7 @@ textarea::-webkit-input-placeholder {
     height: max-content;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
       "a b "
       "c d "
@@ -1076,9 +1093,9 @@ textarea::-webkit-input-placeholder {
     font-size: 25px;
   }
   .logo {
-    padding-left: 69px;
     order: 1;
   }
+
   #ham {
     display: block;
 
