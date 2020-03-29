@@ -398,6 +398,7 @@ li:nth-child(2) .point::before {
     "h i j k";
   grid-column-gap: 20px;
   grid-row-gap: 10px;
+  overflow: hidden;
 }
 .grid_elem {
   margin-bottom: 6px;
@@ -847,7 +848,9 @@ textarea::-webkit-input-placeholder {
     max-width: 375px;
     height: max-content;
   }
-
+  .portfolio {
+    max-height: 800px;
+  }
   .header_content {
     max-width: 375px;
     height: max-content;
@@ -862,9 +865,7 @@ textarea::-webkit-input-placeholder {
       "a b "
       "c d "
       "e f"
-      "g h"
-      "i j"
-      "k l";
+      "g h";
   }
   .grid_faces_table {
     grid-template-columns: 1fr;
@@ -1002,6 +1003,7 @@ textarea::-webkit-input-placeholder {
       "k l";
   }
   .grid_faces_table {
+    overflow: hidden;
     grid-template-columns: 1fr;
     grid-template-areas:
       "a"

@@ -51,6 +51,12 @@ const vertical_phone = document.getElementById("vertical_phone");
 const horizontal_phone = document.getElementById("horizontal_phone");
 
 let countScreenVertical = 0;
+vertical_phone.addEventListener("touchstart", () => {
+  if (countScreenVertical % 2 == 0) {
+    vertical.style.display = "none";
+  } else vertical.style.display = "block";
+  countScreenVertical++;
+});
 vertical_phone.addEventListener("click", () => {
   if (countScreenVertical % 2 == 0) {
     vertical.style.display = "none";
@@ -58,11 +64,23 @@ vertical_phone.addEventListener("click", () => {
   countScreenVertical++;
 });
 let countScreenHorizontal = 0;
+horizontal_phone.addEventListener("touchstart", () => {
+  if (countScreenHorizontal % 2 == 0) {
+    horizontal.style.display = "none";
+  } else horizontal.style.display = "block";
+  countScreenHorizontal++;
+});
 horizontal_phone.addEventListener("click", () => {
   if (countScreenHorizontal % 2 == 0) {
     horizontal.style.display = "none";
   } else horizontal.style.display = "block";
   countScreenHorizontal++;
+});
+vertical.addEventListener("touchstart", () => {
+  if (countScreenVertical % 2 == 0) {
+    vertical.style.display = "none";
+  } else vertical.style.display = "block";
+  countScreenVertical++;
 });
 vertical.addEventListener("click", () => {
   if (countScreenVertical % 2 == 0) {
@@ -71,6 +89,12 @@ vertical.addEventListener("click", () => {
   countScreenVertical++;
 });
 
+horizontal.addEventListener("touchstart", () => {
+  if (countScreenHorizontal % 2 == 0) {
+    horizontal.style.display = "none";
+  } else horizontal.style.display = "block";
+  countScreenHorizontal++;
+});
 horizontal.addEventListener("click", () => {
   if (countScreenHorizontal % 2 == 0) {
     horizontal.style.display = "none";
@@ -175,11 +199,25 @@ document.querySelector("#arrowLeft").addEventListener("click", function() {
   }
 });
 
+document.querySelector("#arrowLeft").addEventListener("touchstart", function() {
+  if (isEnabled) {
+    previousItem(currentItem);
+  }
+});
+
 document.querySelector("#arrowRight").addEventListener("click", function() {
   if (isEnabled) {
     nextItem(currentItem);
   }
 });
+
+document
+  .querySelector("#arrowRight")
+  .addEventListener("touchstart", function() {
+    if (isEnabled) {
+      nextItem(currentItem);
+    }
+  });
 
 const swipedetect = el => {
   let surface = el;
