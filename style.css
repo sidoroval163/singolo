@@ -389,6 +389,11 @@ li:nth-child(2) .point::before {
 /* Grid */
 
 .grid_img_table {
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+
   margin-top: 19px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
